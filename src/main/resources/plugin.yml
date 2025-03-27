@@ -1,0 +1,12 @@
+name: ShrinkingBorder
+version: 1.2
+main: me.yourname.shrinkingborder.ShrinkingBorder
+api-version: 1.16
+commands:
+  shrinkborder:
+    description: Starts the border shrinking process
+    usage: /<command>
+permissions:
+  shrinkingborder.use:
+    description: Allows player to shrink the border
+    default: op

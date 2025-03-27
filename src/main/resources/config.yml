@@ -1,0 +1,19 @@
+border:
+  centerX: 0
+  centerZ: 0
+  initialSize: 1000
+  finalSize: 100
+  shrinkIntervalTicks: 24000
+  shrinkAmountPerStep: 1.0
+
+messages:
+  enabled: true
+  shrinkBroadcast: "⚠️ The world border is shrinking! New size: %size% blocks."
+
+teleportOutsidePlayersInside: true
+
+sounds:
+  enabled: true
+  shrinkSound: "ambient.cave"
+  volume: 1.0
+  pitch: 1.0
