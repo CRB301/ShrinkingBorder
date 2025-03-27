@@ -1,4 +1,4 @@
-name: Build ShrinkingBorder Plugin
+name: Java CI with Maven
 
 on:
   push:
@@ -17,13 +17,13 @@ jobs:
     - name: Set up Java
       uses: actions/setup-java@v3
       with:
-        java-version: '17'
         distribution: 'temurin'
+        java-version: '17'
 
     - name: Build with Maven
-      run: mvn -B package --file pom.xml
+      run: mvn clean package
 
-    - name: Upload plugin jar
+    - name: Upload JAR
       uses: actions/upload-artifact@v3
       with:
         name: ShrinkingBorder
